@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.16)
+project(archiver)
+set(CMAKE_CXX_STANDARD 20)
+set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Werror")
+add_executable(archiver main.cpp ArgsParser.cpp Reader.cpp Trie.cpp PriorityQueue.cpp Writer.cpp Codes.cpp Encoder.cpp EncodeWriter.cpp  EncodeReader.cpp DecodeReader.cpp DecodeWriter.cpp)
